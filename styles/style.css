@@ -1,0 +1,59 @@
+html{
+    font-size: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+    font-size: .5rem;
+    text-transform: uppercase;
+    height: 100px;
+    text-align: start;
+}
+header_img {
+    height: 50%
+}
+
+nav ul{
+    background-color: antiquewhite;
+    color: black;
+    border: 1px black
+}
+
+nav ul li a {
+    background-color: rgb(8, 5, 0);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight:  bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+}
+
+.wrapper {
+    background-color: antiquewhite;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 8.8rem;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: black;
+}
+
