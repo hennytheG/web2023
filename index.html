@@ -3,12 +3,13 @@
   <!-- this is the <head> section; not to be confused with the <header> section -->
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="test site for web2023">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Henry Graden</title>
   </head>
 
-  <!-- this is a comment; it's different than how to add CSS comments. -->
+  <!-- this is a comment; it's different than how to add CSS comments -->
 
   <!-- the <body> element comes immediately after the closing </head> -->
 
@@ -16,16 +17,18 @@
 
     <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
     <header>
-      <img src="bb.png" alt="my dog" title="my dog">
-
+       <h1 id="title">Henry Graden</h1>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
     </header>
 
     <!-- new section for <nav>, which contains <ul> and <li> elements -->
     <nav>
       <ul>
-        <li><a href="Biography.html">Biography</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="topfeats.html">Top Feats</a></li>
         <li><a href="CurrentLife.html">Current Life</a></li>
-        <li><a href="TopFeats.html">Top Feats</a></li>
       </ul>
     </nav>
 
@@ -42,19 +45,42 @@
         <article id="main_article">
 
         <!-- it's good practice to include a <h2> for each <section> or <article> -->
-        <h2>Welcome To My Life</h2>
+        <h2>Hi, Welcome to My Biography Page.</h2>
 
-        <p>This is where you can learn more about the, Henry Graden. <br>
-        
+        <p>This website is for anyone who is interested in learning about Henry Graden. It features a Biography, Top Feats, and Current Events. Enjoy!
+
+      </p> 
+
         </article>
-      </section>
-      </div>
-      
 
+        <!-- be sure to use alt and title for images -->
+        <figure id="main_fig">
+           <img src="images/henrymom.jpg"
+          alt="henry mom"
+          title="Myself and my Mom.
+          <figcaption>
+          <a href="https://www.healthcare4ppl.com/physician/kentucky/salyersville/joanna-l-santiesteban-1700870078.html">About my mom!</a>
+          </figcaption>
+        </figure>
+
+      </section>
+
+      <section id="secondary">
+
+       
+      </section>
+
+    </div> <!-- wrapper -->
+
+       
     <!-- the <footer> can contain more than an address, but this
     is a useful place to include it. -->
     <footer>
-        <p>If there are any questions or concerns, my email is henrygraden@outlook.com. :) </p>
+
+      <address>
+        <p>1100 S. Broadway, Lexington KY</p>
+      </address>
+
     </footer>
 
    <!-- be sure to close the </body> and the </html> elements at the end -->
