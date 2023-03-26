@@ -1,60 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Biography HG</title>
-        <style>
-            html {
-                font-size: 100%;
-            }
+  <!-- this is the <head> section; not to be confused with the <header> section -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="test site for web2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Henry Graden</title>
+  </head>
 
-            header {
-                border-bottom: 10px dotted rgb(255, 0, 234);
-            }
+  <!-- this is a comment; it's different than how to add CSS comments -->
 
-            section {
-                display: flex;
-                gap: 10px;
-                flex-wrap: wrap;
-            }
+  <!-- the <body> element comes immediately after the closing </head> -->
 
-            p {
-                border: 1px solid rgb(255, 123, 0);
-                font-size: 2rem;
-                width: 8rem;
-                height: 8rem;
-                padding: 10rem;
-            }
+  <body>
 
-            p:nth-child(odd) {
-                background-color: rgb(255, 115, 0);
-                color: white;
-            }
+    <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
+    <header>
+       <h1 id="title">Henry Graden</h1>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </header>
 
-            p:nth-child(even) {
-                background-color: rgb(234, 0, 255);
-                color: rgb(255, 123, 0);
-            }
+    <!-- new section for <nav>, which contains <ul> and <li> elements -->
+    <nav>
+      <ul>
+        <li><a href="biography.html">Biography TWO PAGE WEBSITE BUILD</a></li>
+        <li><a href="topfeats.html">Top Feats</a></li>
+        <li><a href="CurrentLife.html">Current Life</a></li>
+      </ul>
+    </nav>
 
-            footer {
-                border-top: 10px dotted rgb(212, 0, 255);
-            }
-        </style>
-    </head>
+    <!-- the <div> wraps around all elements below except for the <footer> element -->
+    <div class="wrapper">
 
-    <body>
-        <header><h1>Biography</h1></header>
+      <!-- this is the first of two <section> elements on this page -->
+      <section id="primary">
 
-        <section class="main">
-            <p>Born April 10,2000 in Greensville Indiana.</p>
-            <p>Grew up in Eastern Kentucky. Attended Paintsville HS. </p>
-            <p>Joined the Army National Guard in 2018 as a CBRN Specialist.</p>
-            <p>Went to Morehead in 2019 and then switched to UK in 2020.</p>
-           
-        </section>
+        <!-- this is the first of two <article> elements on this page. Each
+        <article> element is in its own <section>. In practice, this might be
+        redundant; that is, you can either use an <article> or a <section>
+        element and may not need both. -->
+        <article id="main_article">
 
-        
-    </body>
+        <!-- it's good practice to include a <h2> for each <section> or <article> -->
+        <h2>Hi, Welcome to My Biography Page.</h2>
 
+        <p>This website is for anyone who is interested in learning about Henry Graden. It features a Biography, Top Feats, and Current Events. Enjoy!
+
+      </p> 
+
+
+      <form action="#" method="post" class="basicform">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="bio" id="name" required>
+        <br>
+        <label for="email">Enter your email address: </label>
+        <input type="text" name="bio" id="email" required>
+        <br>
+        <input type="submit" value="Subscribe!">
+    </form>
+
+    
+        </article>
+
+        <!-- be sure to use alt and title for images -->
+        <figure id="main_fig">
+           <img src="images/henrymom.jpg"
+          alt="henry mom"
+          title="Myself and my Mom." >
+          <a href="https://www.healthcare4ppl.com/physician/kentucky/salyersville/joanna-l-santiesteban-1700870078.html">About my mom!</a>
+        </figure>
+
+      </section>
+
+      <section id="secondary">
+          <img src="henrysydney.jpg"
+          srcset="henrysydney.jpg"
+          alt="henry and sydney"
+          title="Henry and Sydney">
+          
+
+
+      </section>
+
+    </div> 
+
+    
+
+       
+  
+    <footer>
+
+      <address>
+        <p>1100 S. Broadway, Lexington KY</p>
+      </address>
+
+    </footer>
+
+
+  
+
+  </body>
 </html>
